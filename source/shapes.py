@@ -36,3 +36,8 @@ class Rectangle(Shape):
             return False
 
         return self.width == other.width and self.length == other.length
+
+
+class Square(Rectangle):
+    def __init__(self, side_length):
+        super().__init__(side_length, side_length)
